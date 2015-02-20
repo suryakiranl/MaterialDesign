@@ -1,0 +1,28 @@
+.hamburger-drawer {
+  background: none no-repeat scroll center center / 24px 24px transparent;
+  background-image: url("../images/hamburger-drawer.svg");
+  left: 12px;
+  border: 0px none;
+  display: block;
+  height: 48px;
+  overflow: hidden;
+  text-indent: -9999px;
+  top: 8px;
+  width: 48px;
+  z-index: 2;
+  position: fixed;
+}
+
+button.hamburger-drawer {
+  color: inherit;
+  font: inherit;
+  margin: 0px;
+  text-transform: none;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  -moz-appearance: none;
+  cursor: pointer;
+  vertical-align: middle;
+  white-space: nowrap;
+}
