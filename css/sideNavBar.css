@@ -26,3 +26,61 @@ button.hamburger-drawer {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+#side-nav {
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+  bottom: 0px;
+  background: none repeat scroll 0% 0% #FFF;
+  color: #333;
+  display: block;
+  font-family: "RobotoDraft","Roboto",sans-serif;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 240px;
+  z-index: 4;
+  transform: translateZ(0px);
+  transform-style: preserve-3d;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+
+side-nav.drawer-visible {
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+.drawer-hidden {
+  visibility: hidden;
+  transform: translateX(-241px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.side-nav-wrapper {
+    min-height: 100%;
+    padding-bottom: 96px;
+    position: relative;
+}
+
+#side-nav #avatar {
+    border-bottom: 1px solid #E0E0E0;
+    display: block;
+    height: 64px;
+    margin: auto;
+    padding: 12px 24px 10px;
+    position: relative;
+}
+
+#side-nav #avatar img {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+#side-nav #avatar #profileName {
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
