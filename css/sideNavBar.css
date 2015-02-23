@@ -87,7 +87,3 @@ side-nav.drawer-visible {
   line-height: 48px;
   text-align: center;
 }
-
-
-#c-outer[id] {display: table; position: static;}
-#c-middle[id] {display: table-cell; vertical-align: middle; width: 100%; position: static;}
