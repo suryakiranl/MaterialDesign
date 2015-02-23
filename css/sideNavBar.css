@@ -121,3 +121,26 @@ p {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 }
+
+#side-nav nav {
+  font-size: 13px;
+  padding: 12px 0 10px 0;
+  transform: translateZ(0);
+}
+
+#side-nav nav dl {
+  margin-top: 0;
+}
+
+dl {
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+#side-nav nav dl dt {
+  border-left: 2px solid transparent;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 15px 0 15px 22px;
+}
