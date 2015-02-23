@@ -71,16 +71,23 @@ side-nav.drawer-visible {
     position: relative;
 }
 
-#side-nav #avatar img {
+#side-nav #avatar #avatar-img {
+  background-image: url("../images/avatar.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
   height: 48px;
   width: 48px;
+  float: left;
 }
 
-#side-nav #avatar #profileName {
-  height: 48px;
+#side-nav #avatar span {
+  vertical-align: middle;
   line-height: 48px;
   text-align: center;
 }
+
+
+#c-outer[id] {display: table; position: static;}
+#c-middle[id] {display: table-cell; vertical-align: middle; width: 100%; position: static;}
