@@ -27,7 +27,7 @@ button.hamburger-drawer {
   white-space: nowrap;
 }
 
-#side-nav {
+.side-nav-div {
   border-right: 1px solid rgba(0, 0, 0, 0.14);
   bottom: 0px;
   background: none repeat scroll 0% 0% #FFF;
@@ -40,20 +40,20 @@ button.hamburger-drawer {
   width: 240px;
   z-index: 4;
   transform: translateZ(0px);
+  transform: translateX(-240px);
   transform-style: preserve-3d;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
-}
-
-side-nav.drawer-visible {
-  visibility: visible;
-  transform: translateX(0px);
-}
-
-.drawer-hidden {
+  opacity: 0;
   visibility: hidden;
   transform: translateX(-241px);
   overflow-x: hidden;
   overflow-y: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.side-nav-div.drawer-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
 }
 
 .side-nav-wrapper {
@@ -143,4 +143,32 @@ dl {
   font-weight: 700;
   margin-top: 0;
   padding: 15px 0 15px 22px;
+}
+
+.modal-div-mask {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left: 0;
+  opacity: 0.1;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  -webkit-transition: visibility 0 linear 0.4s,opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: visibility 0 linear 0.4s,opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 0 linear 0.4s,opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.modal-div-mask.mdm-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  transition-delay: 0;
 }
