@@ -87,3 +87,37 @@ side-nav.drawer-visible {
   line-height: 48px;
   text-align: center;
 }
+
+#side-nav .legal {
+  border-top: 1px solid #e0e0e0;
+  bottom: 0;
+  color: #212121;
+  font-size: 13px;
+  height: 96px;
+  line-height: 24px;
+  padding: 24px;
+  position: absolute;
+  width: 100%;
+}
+
+a {
+  color: #0277bb;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  background: transparent;
+}
+
+#side-nav .copyright {
+  margin: 0;
+  display: block;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
